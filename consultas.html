@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dentro de un Cuadro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+                      header {
+      background-color: #ff7417;
+      padding: 15px;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+    }
+    h3 {
+      color: #000000;
+      text-align: left; 
+      margin: 0; 
+    }
+    nav {
+      background-color: #ff7417;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right; 
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+        .formulario-container {
+            width: 1000px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            margin-bottom: 5px;
+            display: inline-flex;
+            width: 100px; 
+            text-align: right;
+        }
+        input[type="text"],
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #000;
+        }
+        .icono {
+    width: 20px; 
+    height: auto; 
+    margin: 0 5px; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Registro Nacional de Tenencia Responsable<br />
+          de Mascotas y Animales de Compañía</h3>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Requisitos.html">Requisitos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="consultas.html">Animales Extraviados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solicitudes.html">Mis solicitudes</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <hr>
+    <div class="formulario-container">
+        <form>
+            <div style="text-align: center;">
+                <h2>FORMULARIO DE MASCOTA</h2>
+                <h1>PERDIDA</h1>
+             </div>
+            <label for="animal-name">Nombre:</label>
+            <input type="text" id="animal-name" name="animal-name">
+            <label>Especie:</label>
+            <label for="Perro">Perro:</label>
+            <input type="radio" id="Perro" name="especie" value="Perro">
+            <label for="Gato">Gato:</label>
+            <input type="radio" id="Gato" name="especie" value="Gato">
+            <label>Sexo:</label>
+            <label for="Perro">Macho:</label>
+            <input type="radio" id="Ma" name="sexo" value="Macho">
+            <label for="Gato">Hembra:</label>
+            <input type="radio" id="Hembra" name="Sexo" value="Hembra">
+            <br>
+            <label for="transferer-name">Raza:</label>
+            <input type="text" id="transferer-raza" name="transferer-raza">
+            <label for="transferer-name">Color:</label>
+            <input type="text" id="transferer-color" name="transferer-color">
+            <label for="transferer-name">Codigo de la mascota:</label>
+            <input type="text" id="transferer-color" name="transferer-color">
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="submit" id="limpiarBtn">Limpiar</button>
+        </form>
+        <script>
+            document.getElementById("limpiarBtn").addEventListener("click", function() {
+                document.getElementById("miFormulario").reset();
+            });
+        </script>
+    </div> 
+        <footer>
+            <p>Derechos Reservados &copy; 2024</p>
+            <a href="https://facebook.com"><img src="./assets/img/facebook.png" alt="Facebook" class="icono"></a>
+            <a href="https://twitter.com"><img src="./assets/img/twitter.png" alt="Twitter" class="icono"></a>
+            <a href="https://instagram.com"><img src="./assets/img/instagram.png" alt="Instagram" class="icono"></a>
+            <a href="https://telegram.com"><img src="./assets/img/telegram.png" alt="telegram" class="icono"></a>
+            <a href="https://whatsapp.com"><img src="./assets/img/whatsapp.png" alt="whatsapp" class="icono"></a>
+          </footer>     
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

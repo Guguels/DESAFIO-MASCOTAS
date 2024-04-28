@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRO NACIONAL DE MASCOTAS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        n {
+      padding: 20px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 15px;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+    }
+    h3 {
+      color: #000000;
+      text-align: left; 
+      margin: 0; 
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right; 
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .button-container {
+      text-align: center;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: orange;
+      color: white;
+      padding: 15px 30px; 
+      border: none;
+      border-radius: 10px; 
+      width: 400px;
+      height: 60px; 
+      cursor: pointer;
+      font-size: 20px; 
+    }
+
+    button + button {
+      margin-top: 10px;
+      color: white;
+    }
+
+    footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #000;
+        }
+        .icono {
+    width: 20px; 
+    height: auto; 
+    margin: 0 5px; 
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h3>Registro Nacional de Tenencia Responsable<br />
+      de Mascotas y Animales de Compañía</h3>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Requisitos.html">Requisitos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="consultas.html">Animales Extraviados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="solicitudes.html">Mis solicitudes</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div style="position: relative;"> 
+    <img src="./assets/img/Perro.jpg" alt="Imagen con texto">
+    <div style="position: absolute; top: 50px; left: 120px; color: white; text-align: left;"> 
+      <div style="text-align: center;"><h1>Registro Nacional</h1></div>
+      <h4>DE MASCOTAS O ANIMALES DE COMPAÑÍA</h4>
+      <hr style="align-content:left;" size="2" width="300px" color="#ffffff">
+      <div class="button-container">
+        <button><a href="Ingresar.html">Ingresar con clave única</a></button>
+        <button><a href="Celula.html">Ingrese con cédula de identidad</a></button>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Derechos Reservados &copy; 2024</p>
+    <a href="https://facebook.com"><img src="./assets/img/facebook.png" alt="Facebook" class="icono"></a>
+    <a href="https://twitter.com"><img src="./assets/img/twitter.png" alt="Twitter" class="icono"></a>
+    <a href="https://instagram.com"><img src="./assets/img/instagram.png" alt="Instagram" class="icono"></a>
+    <a href="https://telegram.com"><img src="./assets/img/telegram.png" alt="telegram" class="icono"></a>
+    <a href="https://whatsapp.com"><img src="./assets/img/whatsapp.png" alt="whatsapp" class="icono"></a>
+  </footer>  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
